@@ -1,36 +1,39 @@
 import React from "react"
-import { Card } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Card}  from 'react-bootstrap'
 
-export default class ActorComp extends React.Component {
+class ActorComp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            FirstName: this.props.actor.FirstName,
-            LastName: this.props.actor.LastName,
-            Birthday: this.props.actor.Birthday,
-            Image: this.props.actor.Image,
+            firstName: this.props.actor.firstName,
+            lastName: this.props.actor.lastName,
+            birthday: this.props.actor.birthday,
+            image: this.props.actor.image
         };
     }
 
-    calcAge() {
+    calcAge = () => {
         const currentYear = new Date().getFullYear();
-        const age = currentYear - new Date(this.state.Birthday).getFullYear();
+        const age = currentYear - new Date(this.state.birthday).getFullYear();
         return (age);
     }
 
-
     render() {
         return (
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={this.state.Image} />
-                <Card.Body>
-                    <Card.Title>{this.state.FirstNmae} {this.state.LastName}</Card.Title>
-                    <Card.Text>
-                    {this.state.Birthday}
-                    </Card.Text>
-                </Card.Body>
-            </Card>
-        
-        );
+            <div>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={this.state.image} />
+                    <Card.Body>
+                        <Card.Title>{this.state.firstName} {this.state.lastName}</Card.Title>
+                        <Card.Text>
+                            <h4>{this.calcAge()}</h4>
+                        </Card.Text>    
+                    </Card.Body>
+                </Card>
+            </div>
+        )
     }
 }
+
+export default ActorComp;
