@@ -9,7 +9,8 @@ class ActorComp extends React.Component {
             firstName: this.props.actor.firstName,
             lastName: this.props.actor.lastName,
             birthday: this.props.actor.birthday,
-            image: this.props.actor.image
+            image: this.props.actor.image,
+            linkActor : this.props.actor.linkActor,
         };
     }
 
@@ -20,12 +21,13 @@ class ActorComp extends React.Component {
     }
 
     render() {
+        const actorName=`${this.state.firstName} ${this.state.lastName}` 
         return (
             <div>
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.state.image} />
                     <Card.Body>
-                        <Card.Title>{this.state.firstName} {this.state.lastName}</Card.Title>
+                        <Card.Title><a href={this.state.linkActor} target="_blank"> {actorName} </a></Card.Title>
                         <Card.Text>
                             <h4>{this.calcAge()}</h4>
                         </Card.Text>    
