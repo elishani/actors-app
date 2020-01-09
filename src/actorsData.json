@@ -1,5 +1,5 @@
  [
-    
+
     {
         "firstName": "Bard",
         "lastName": "Pitt",
@@ -31,8 +31,6 @@
         "image": "https://m.media-amazon.com/images/M/MV5BMjEyMTEyOTQ0MV5BMl5BanBnXkFtZTcwNzU3NTMzNw@@._V1_UY317_CR9,0,214,317_AL_.jpg",
         "linkActor": "https://www.imdb.com/name/nm0000123?ref_=nv_sr_srsg_0"
     },
-    
-    
 
     {
         "firstName": "Robert",
@@ -41,6 +39,7 @@
         "image": "https://m.media-amazon.com/images/M/MV5BMTk1Nzc5MzQyMV5BMl5BanBnXkFtZTcwNjQ5OTA0Mg@@._V1_UY317_CR7,0,214,317_AL_.jpg",
         "linkActor": "https://www.imdb.com/name/nm0000602?ref_=nv_sr_srsg_0"
     },
+    
     {
         "firstName": "Julia",
         "lastName": "Roberts",
