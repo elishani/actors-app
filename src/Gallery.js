@@ -1,6 +1,6 @@
 import React from "react";
 import actorsData from "./actorsData.json";
-import ActorObjt from "./ActorObjt.js";
+import ActorObjt from "./ActorModle.js";
 import ActorComp from "./ActorComp.js";
 import { Row, Container } from 'react-bootstrap';
 

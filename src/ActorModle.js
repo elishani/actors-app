@@ -1,4 +1,4 @@
-class ActorObjt {
+export default class ActorObjt {
 
     constructor(firstNameOrObject, lastName, birthday, image, link) {
         if (arguments.length === 1) {
@@ -19,5 +19,3 @@ class ActorObjt {
         return new Date().getFullYear() - new Date(this.birthday).getFullYear();
     };
 }
-
-export default ActorObjt 

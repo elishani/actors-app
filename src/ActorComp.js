@@ -1,7 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card}  from 'react-bootstrap';
-import ActorObjt from './ActorObjt.js'
 
 class ActorComp extends React.Component {
     constructor(props) {
@@ -9,7 +8,7 @@ class ActorComp extends React.Component {
     }
 
     render() {
-        const actorName=`${this.props.actor.firstName} ${this.props.actor.lastName}` 
+        const actorName=`Name: ${this.props.actor.firstName} ${this.props.actor.lastName}` 
         return (
             <div>
                 <Card style={{ width: '18rem' }}>
